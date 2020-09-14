@@ -10,7 +10,6 @@ import math
 x = 0.0
 theta = 0.0
 speed = Twist()
-r = rospy.Rate(10)
 goal = Point()
 finish = False
 
@@ -32,6 +31,7 @@ rospy.init_node("daniel_node")
 sub = rospy.Subscriber("/odom", Odometry, callback)
 pub = rospy.Publisher("/cmd_vel", Twist, queue_size = 1)
 
+r = rospy.Rate(10)
 
 while not rospy.is_shutdown():
 
