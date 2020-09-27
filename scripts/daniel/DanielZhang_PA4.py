@@ -16,7 +16,7 @@ key_mapping = {
     'f': [0, 0.2], 'b': [0, -0.2], 
     'l': [30*2*math.pi/360, 0], 'r': [-30*2*math.pi/360,  0],
     'h':[0,0], 's': [180*2*math.pi/360, 0.3],
-    'z0': [0, 0.3], 'z1':[-65*2*math.pi/360, 0],
+    'z0': [0, 0.2], 'z1':[-65*2*math.pi/360, 0],
     'z2':[65*2*math.pi/360, 0]
 }
 
@@ -97,7 +97,7 @@ state = "h"
 last_key_press_time = time.time()
 
 # set rate
-rate = rospy.Rate(10)
+rate = rospy.Rate(20)
 
 # Wait for published topics, exit on ^c
 while not rospy.is_shutdown():
