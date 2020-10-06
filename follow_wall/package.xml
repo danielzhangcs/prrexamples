@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<package format="2">
+  <name>follow_wall</name>
+  <version>0.0.0</version>
+  <description>The follow_wall package</description>
+  <maintainer email="danielzhang@brandeis.edu">root</maintainer>
+  <license>MIT</license>
+  <author email="danielzhang@brandeis.edu">Daniel Zhang</author>
+  <buildtool_depend>catkin</buildtool_depend>
+  <build_depend>roscpp</build_depend>
+  <build_depend>rospy</build_depend>
+  <build_export_depend>roscpp</build_export_depend>
+  <build_export_depend>rospy</build_export_depend>
+  <exec_depend>roscpp</exec_depend>
+  <exec_depend>rospy</exec_depend>
+
+  <export>
+  </export>
+</package>

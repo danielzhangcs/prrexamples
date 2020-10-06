@@ -44,9 +44,6 @@ while not rospy.is_shutdown():
 
     # check whether antyhing is closer than x meters or 
     # time for driving foreward is over, then start spinning in place
-    print("============")
-    print(filtered_ranges)
-    print("==============")
 
     if len(filtered_ranges) == 0:
         twist.linear.x = 0.1
